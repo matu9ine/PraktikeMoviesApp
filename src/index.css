@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4em;
+    background: #FFF;
+    color: #111;
+    font-weight: 300;
+    padding-top: 36px;
+    margin: 0 36px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.MovieItem {
+    display: flex;
+    /*width: 454px;*/
+    height: 281px;
+    /*flex-shrink: 0;*/
+    background: #fff;
+    /*box-shadow: 0 2px 8px rgba(0,0,0,0.1);*/
+    overflow: hidden;
+    margin-bottom: 36px; /* Space between rows */
+
+    /* @shadow-2 */
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.MoviePoster img {
+    width: 183px;
+    height: 281px;
+}
+
+.MovieDetails {
+    padding: 12px 20px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.MovieDetails h2 {
+    margin-bottom: 0;
+}
+
+.ReleaseDate {
+    color: #827E7E;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 183.333% */
+    margin-top: 7px;
+}
+
+.Overview {
+    color: #000;
+
+    /* @font-size-sm: 12px */
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 183.333% */
+    margin-top: 10px;
+}
+
+.Title {
+    color: #000;
+
+    /* H5 - Header 5 */
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+.Genres {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 6px;
+    margin-top: 9px;
+}
+
+.ErrorIndicator {
+    padding: 0 36px;
+}
+
+@media (max-width: 550px) {
+    .MovieItem {
+        flex-direction: column;
+        align-items: center;
+        height: 245px;
+    }
+
+    .MoviePoster .ant-image {
+        width: 60px;
+        height: 91px;
+        margin-right: 13px;
+    }
+
+    .MovieDetails {
+        width: 100%;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: start;
+        flex: 0;
+    }
+
+    .flex-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Genres, .Overview {
+        align-self: stretch;
+        text-align: left;
+        margin: 0;
+    }
+    .Overview {
+        padding: 0 10px;
+    }
+    .Genres {
+        margin-top: 6px;
+    }
+    .ReleaseDate {
+        margin: 0;
+    }
+    .flex-tittle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .MovieRatingValue {
+        margin: auto 0;
+        align-self: flex-end;
+        padding: 10px;
+    }
+}
