@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PraktikeMoviesApp/static/css/main.59741ac7.css",
+    "main.js": "/PraktikeMoviesApp/static/js/main.a1bfa49b.js",
+    "index.html": "/PraktikeMoviesApp/index.html",
+    "main.59741ac7.css.map": "/PraktikeMoviesApp/static/css/main.59741ac7.css.map",
+    "main.a1bfa49b.js.map": "/PraktikeMoviesApp/static/js/main.a1bfa49b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59741ac7.css",
+    "static/js/main.a1bfa49b.js"
+  ]
+}
